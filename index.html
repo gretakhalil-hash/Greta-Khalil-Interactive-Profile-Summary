@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="glean-artifact-type" content="web_design">
+<meta name="description" content="Greta Khalil - Director, Service Design at CSG (EMEA). Service design, strategic account management and complex Managed Services deals. Co-Chair, WE LEaD EMEA.">
+<title>Greta Khalil | Service Design &amp; Strategic Account Management</title>
+<style>
+:root {
+
+  --artifact-background: #fbfcff;
+  --artifact-background-light: #ffffff;
+  --artifact-background-mid: #f0f4ff;
+  --artifact-border-light: #e3e9f6;
+  --artifact-border-dark: #c3cde6;
+  --artifact-primary-brand: #2457ff;
+  --artifact-primary-highlight: #0b1220;
+  --artifact-primary-hover: #1a43d6;
+  --artifact-selected: #eaf0ff;
+  --artifact-text-primary: #0b1220;
+  --artifact-text-secondary: #4a5470;
+  --artifact-text-highlight: #eaf0ff;
+  --artifact-positive: #0f9d6e;
+  --artifact-spark: #ff5a36;
+  --artifact-tint: #f3f6ff;
+  --artifact-on-brand: #ffffff;
+  --artifact-grid-line: rgba(36, 87, 255, 0.07);
+  --artifact-shadow: 0 12px 34px rgba(36, 87, 255, 0.10);
+  --mono: "SF Mono", "IBM Plex Mono", "Cascadia Code", Consolas, monospace;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+html[data-theme='dark'] {
+  --artifact-background: #fbfcff;
+  --artifact-background-light: #ffffff;
+  --artifact-background-mid: #f0f4ff;
+  --artifact-border-light: #e3e9f6;
+  --artifact-border-dark: #c3cde6;
+  --artifact-primary-brand: #2457ff;
+  --artifact-primary-highlight: #0b1220;
+  --artifact-primary-hover: #1a43d6;
+  --artifact-selected: #eaf0ff;
+  --artifact-text-primary: #0b1220;
+  --artifact-text-secondary: #4a5470;
+  --artifact-text-highlight: #eaf0ff;
+  --artifact-positive: #0f9d6e;
+  --artifact-spark: #ff5a36;
+  --artifact-tint: #f3f6ff;
+  --artifact-on-brand: #ffffff;
+  --artifact-grid-line: rgba(36, 87, 255, 0.07);
+  --artifact-shadow: 0 12px 34px rgba(36, 87, 255, 0.10);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  margin: 0; padding: 0;
+  background-color: var(--artifact-background);
+  color: var(--artifact-text-primary);
+  font-family: var(--sans); font-size: 16px; font-weight: 400; line-height: 1.6; letter-spacing: -0.005em;
+  overflow-x: hidden;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(var(--artifact-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--artifact-grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 20%, #000 20%, transparent 78%);
+  mask-image: radial-gradient(ellipse at 50% 20%, #000 20%, transparent 78%);
+}
+main, footer, nav { position: relative; z-index: 1; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; background: none; border: 0; padding: 0; }
+:focus-visible { outline: 2px solid var(--artifact-primary-brand); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+h1, h2, h3 { font-family: var(--sans); font-weight: 400; line-height: 1.05; letter-spacing: -0.02em; margin: 0; color: var(--artifact-text-primary); }
+h1 { font-size: clamp(3rem, 9vw, 6.2rem); font-weight: 300; }
+h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); font-weight: 300; }
+h3 { font-size: 1.35rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.2; }
+.eyebrow {
+  font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--artifact-text-secondary); margin: 0 0 18px; display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--artifact-primary-brand); display: inline-block; }
+.muted { color: var(--artifact-text-secondary); }
+.mono { font-family: var(--mono); font-size: 13px; }
+
+/* NAV */
+nav.top { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: var(--artifact-nav-bg); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-bottom: 1px solid var(--artifact-border-light); }
+.nav-in { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.logo { font-family: var(--mono); font-size: 13px; letter-spacing: 0.1em; text-decoration: none; display: flex; align-items: center; gap: 10px; color: var(--artifact-text-primary); }
+.logo i { width: 8px; height: 8px; border-radius: 50%; background: var(--artifact-positive); display: inline-block; animation: pulse 2.4s ease-in-out infinite; }
+.links { display: flex; gap: 4px; }
+.links a { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: var(--artifact-text-secondary); padding: 8px 12px; border-radius: 4px; transition: color .2s; }
+.links a:hover, .links a.active { color: var(--artifact-text-primary); }
+.links a.active { background: var(--artifact-selected); color: var(--artifact-primary-hover); }
+.btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; padding: 12px 20px; border-radius: 4px; border: 1px solid var(--artifact-border-dark); color: var(--artifact-text-primary); background: var(--artifact-background-light); transition: border-color .2s, background .2s, transform .2s; }
+.btn:hover { border-color: var(--artifact-primary-brand); background: var(--artifact-selected); }
+.btn.primary { background: var(--artifact-primary-brand); border-color: var(--artifact-primary-brand); color: var(--artifact-background); font-weight: 600; }
+.btn.primary:hover { background: var(--artifact-primary-hover); border-color: var(--artifact-primary-hover); }
+.btn .arr { transition: transform .2s; }
+.btn:hover .arr { transform: translateX(4px); }
+
+/* HERO */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; padding: 120px 0 80px; overflow: hidden; }
+#net { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.hero .wrap { position: relative; z-index: 2; width: 100%; }
+.hero h1 { margin-bottom: 26px; }
+.hero h1 span { color: var(--artifact-text-secondary); }
+.lede { font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 300; max-width: 640px; color: var(--artifact-text-primary); margin: 0 0 28px; line-height: 1.45; letter-spacing: -0.01em; }
+.term { font-family: var(--mono); font-size: 13px; color: var(--artifact-text-secondary); background: var(--artifact-background-light); border: 1px solid var(--artifact-border-light); border-radius: 6px; padding: 12px 16px; display: inline-block; max-width: 100%; margin-bottom: 36px; min-height: 46px; }
+.term b { color: var(--artifact-primary-brand); font-weight: 500; }
+.term .caret { display: inline-block; width: 7px; height: 14px; background: var(--artifact-primary-brand); vertical-align: -2px; margin-left: 3px; animation: blink 1s steps(1) infinite; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 64px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--artifact-border-light); max-width: 900px; }
+.stat { padding: 22px 20px 0 0; }
+.stat + .stat { padding-left: 20px; border-left: 1px solid var(--artifact-border-light); }
+.stat .n { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 300; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.stat .n sup { font-size: .45em; color: var(--artifact-primary-brand); vertical-align: top; position: relative; top: .2em; }
+.stat .l { font-size: 13px; color: var(--artifact-text-secondary); margin-top: 8px; line-height: 1.4; }
+
+/* SECTIONS */
+section { padding: 120px 0; position: relative; }
+.sec-head { max-width: 760px; margin-bottom: 56px; }
+.sec-head p { color: var(--artifact-text-secondary); margin: 18px 0 0; font-size: 1.05rem; }
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 64px; align-items: start; }
+.about-text .lead { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 300; line-height: 1.5; margin: 0 0 32px; letter-spacing: -0.01em; }
+.thesis { margin: 0 0 32px; padding: 28px 28px; background: var(--artifact-text-highlight); color: var(--artifact-text-primary); border-radius: 8px; }
+.thesis p { margin: 0; font-size: clamp(1.25rem, 2.4vw, 1.75rem); font-weight: 300; line-height: 1.3; letter-spacing: -0.015em; }
+.thesis em { font-style: normal; color: var(--artifact-primary-hover); }
+.about-text p.body { color: var(--artifact-text-secondary); margin: 0 0 20px; max-width: 560px; }
+.about-text p.body strong { color: var(--artifact-text-primary); font-weight: 500; }
+.diagram { position: sticky; top: 88px; background: var(--artifact-background-light); border: 1px solid var(--artifact-border-light); border-radius: 8px; padding: 20px 20px 22px; }
+.seg { display: inline-flex; border: 1px solid var(--artifact-border-dark); border-radius: 6px; overflow: hidden; margin-bottom: 8px; }
+.seg button { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 14px; color: var(--artifact-text-secondary); background: var(--artifact-background-light); transition: background .2s, color .2s; }
+.seg button[aria-pressed="true"] { background: var(--artifact-primary-brand); color: var(--artifact-background); font-weight: 600; }
+.seg button:not([aria-pressed="true"]):hover { background: var(--artifact-selected); color: var(--artifact-text-primary); }
+#sc-svg { width: 100%; height: auto; display: block; }
+#sc-svg .edge { stroke: var(--artifact-primary-brand); stroke-width: 1.2; opacity: 0; transition: opacity .6s; }
+#sc-svg.on .edge { opacity: .55; stroke-dasharray: 3 7; animation: flow 1.6s linear infinite; }
+#sc-svg .pill { fill: var(--artifact-background-mid); stroke: var(--artifact-border-dark); stroke-width: 1; transition: stroke .3s, fill .3s, stroke-dasharray .3s; }
+#sc-svg:not(.on) .pill { stroke-dasharray: 4 4; }
+#sc-svg .node { cursor: pointer; }
+#sc-svg .node text { fill: var(--artifact-text-primary); font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+#sc-svg .node:hover .pill, #sc-svg .node.sel .pill, #sc-svg .node:focus-visible .pill { stroke: var(--artifact-primary-brand); fill: var(--artifact-selected); stroke-dasharray: none; }
+#sc-svg .hub { fill: var(--artifact-primary-brand); opacity: 0; transition: opacity .6s; }
+#sc-svg.on .hub { opacity: 1; }
+.cap { min-height: 96px; margin-top: 8px; border-top: 1px solid var(--artifact-border-light); padding-top: 16px; }
+.cap .k { font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--artifact-primary-brand); margin-bottom: 6px; }
+.cap p { margin: 0; font-size: 14.5px; color: var(--artifact-text-secondary); line-height: 1.5; }
+
+/* FOCUS */
+.focus-grid { display: grid; grid-template-columns: 340px 1fr; gap: 56px; align-items: start; }
+.tabs { display: flex; flex-direction: column; border-top: 1px solid var(--artifact-border-light); }
+.tabs button { text-align: left; padding: 18px 8px 18px 0; border-bottom: 1px solid var(--artifact-border-light); font-size: 1.05rem; color: var(--artifact-text-secondary); display: flex; align-items: center; justify-content: space-between; gap: 12px; transition: color .2s, padding .25s; }
+.tabs button .pt { width: 6px; height: 6px; background: var(--artifact-border-dark); transition: background .2s, transform .2s; flex: none; }
+.tabs button:hover { color: var(--artifact-text-primary); }
+.tabs button[aria-selected="true"] { color: var(--artifact-text-primary); padding-left: 8px; }
+.tabs button[aria-selected="true"] .pt { background: var(--artifact-primary-brand); transform: rotate(45deg) scale(1.3); }
+.panel { display: none; }
+.panel.active { display: block; animation: rise .45s ease both; }
+.panel-box { background: var(--artifact-background-light); border: 1px solid var(--artifact-border-light); border-radius: 8px; padding: 36px; min-height: 340px; }
+.panel-box h3 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 300; letter-spacing: -0.02em; margin-bottom: 14px; }
+.panel-box .about-line { color: var(--artifact-text-secondary); font-size: 1.05rem; margin: 0 0 28px; max-width: 560px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-family: var(--mono); font-size: 12px; letter-spacing: .04em; padding: 8px 12px; border: 1px solid var(--artifact-border-dark); border-radius: 4px; color: var(--artifact-text-primary); background: var(--artifact-background-mid); }
+.chain { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; }
+.chain .step { font-family: var(--mono); font-size: 12px; padding: 9px 12px; border: 1px solid var(--artifact-border-dark); border-radius: 4px; background: var(--artifact-background-mid); color: var(--artifact-text-secondary); transition: all .25s; cursor: default; }
+.chain .sep { color: var(--artifact-border-dark); font-family: var(--mono); transition: color .25s; }
+.chain .step.lit { border-color: var(--artifact-primary-brand); color: var(--artifact-text-primary); background: var(--artifact-selected); }
+.chain .sep.lit { color: var(--artifact-primary-brand); }
+.label-sm { font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--artifact-text-secondary); margin: 0 0 12px; }
+
+/* TOOLS */
+.tools { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.tool { background: var(--artifact-background-light); border: 1px solid var(--artifact-border-light); border-radius: 8px; padding: 32px; display: flex; flex-direction: column; }
+.tool-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; flex-wrap: wrap; }
+.tool h3 { font-size: 2rem; font-weight: 300; letter-spacing: -0.02em; }
+.badge { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; padding: 5px 9px; border-radius: 4px; border: 1px solid var(--artifact-border-dark); color: var(--artifact-text-secondary); }
+.badge.live { color: var(--artifact-positive); border-color: color-mix(in srgb, var(--artifact-positive) 45%, var(--artifact-background)); }
+.tool .desc { color: var(--artifact-text-secondary); margin: 0 0 28px; }
+.stepper { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; margin-bottom: 20px; }
+.stepper::before { content: ""; position: absolute; left: 12.5%; right: 12.5%; top: 11px; height: 1px; background: var(--artifact-border-dark); }
+.stepper .prog { position: absolute; left: 12.5%; top: 11px; height: 1px; background: var(--artifact-primary-brand); transition: width .5s ease; width: 0; }
+.sbtn { position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; padding: 0 4px; }
+.sbtn .dot { width: 23px; height: 23px; border-radius: 50%; background: var(--artifact-background); border: 1px solid var(--artifact-border-dark); display: grid; place-items: center; transition: all .3s; z-index: 1; }
+.sbtn .dot::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--artifact-border-dark); transition: background .3s; }
+.sbtn .t { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; color: var(--artifact-text-secondary); line-height: 1.3; transition: color .3s; }
+.sbtn.done .dot { border-color: var(--artifact-primary-brand); }
+.sbtn.done .dot::after { background: var(--artifact-primary-brand); }
+.sbtn.cur .t { color: var(--artifact-text-primary); }
+.sbtn.cur .dot { background: var(--artifact-selected); }
+.step-detail { margin-top: auto; border-top: 1px solid var(--artifact-border-light); padding-top: 16px; min-height: 76px; font-size: 14.5px; color: var(--artifact-text-secondary); }
+.step-detail b { color: var(--artifact-text-primary); font-weight: 500; }
+.fine { font-size: 13px; color: var(--artifact-text-secondary); margin: 24px 0 0; max-width: 700px; }
+
+/* JOURNEY */
+.gantt { position: relative; height: 96px; margin-bottom: 8px; }
+.lane-bg { position: absolute; left: 0; right: 0; height: 40px; border-bottom: 1px dashed var(--artifact-border-light); }
+.bar { position: absolute; height: 34px; border-radius: 4px; border: 1px solid var(--artifact-border-dark); background: var(--artifact-background-mid); color: var(--artifact-text-secondary); font-family: var(--mono); font-size: 11.5px; letter-spacing: .04em; display: flex; align-items: center; padding: 0 10px; white-space: nowrap; overflow: hidden; transition: all .25s; text-align: left; }
+.bar:hover { border-color: var(--artifact-primary-brand); color: var(--artifact-text-primary); }
+.bar.sel { background: var(--artifact-primary-brand); border-color: var(--artifact-primary-brand); color: var(--artifact-background); font-weight: 600; }
+.bar-label { position: absolute; font-family: var(--mono); font-size: 11.5px; color: var(--artifact-text-secondary); height: 34px; display: flex; align-items: center; pointer-events: none; }
+.axis { position: relative; height: 28px; border-top: 1px solid var(--artifact-border-dark); margin-bottom: 36px; }
+.axis span { position: absolute; top: 8px; font-family: var(--mono); font-size: 11px; color: var(--artifact-text-secondary); transform: translateX(-50%); }
+.axis span::before { content: ""; position: absolute; top: -9px; left: 50%; width: 1px; height: 6px; background: var(--artifact-border-dark); }
+.axis span:first-child { transform: none; }
+.axis span:first-child::before { left: 0; }
+.axis span:last-child { transform: translateX(-100%); }
+.axis span:last-child::before { left: 100%; }
+.role-wrap { display: grid; grid-template-columns: 340px 1fr; gap: 56px; align-items: start; }
+.role-box { background: var(--artifact-background-light); border: 1px solid var(--artifact-border-light); border-radius: 8px; padding: 32px 36px; }
+.role-box .meta { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--artifact-primary-brand); margin: 0 0 10px; }
+.role-box h3 { font-weight: 300; font-size: clamp(1.4rem, 2.6vw, 1.9rem); margin-bottom: 18px; letter-spacing: -0.02em; }
+.role-box ul { margin: 0 0 22px; padding: 0; list-style: none; display: grid; gap: 10px; }
+.role-box li { position: relative; padding-left: 22px; color: var(--artifact-text-secondary); font-size: 15px; line-height: 1.5; }
+.role-box li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 1px; background: var(--artifact-primary-brand); }
+.role-box li b { color: var(--artifact-text-primary); font-weight: 500; }
+
+/* TOOLKIT */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.fbtn { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 10px 14px; border: 1px solid var(--artifact-border-dark); border-radius: 4px; color: var(--artifact-text-secondary); background: var(--artifact-background-light); transition: all .2s; }
+.fbtn:hover { color: var(--artifact-text-primary); border-color: var(--artifact-text-secondary); }
+.fbtn[aria-pressed="true"] { background: var(--artifact-primary-brand); border-color: var(--artifact-primary-brand); color: var(--artifact-background); font-weight: 600; }
+.skills { display: flex; flex-wrap: wrap; gap: 10px; }
+.skill { font-size: 15px; padding: 10px 16px; border: 1px solid var(--artifact-border-dark); border-radius: 999px; background: var(--artifact-background-light); color: var(--artifact-text-primary); transition: opacity .3s, border-color .3s, transform .3s; }
+.skill.dim { opacity: .22; transform: scale(.97); }
+.skill.hit { border-color: var(--artifact-primary-brand); }
+.creds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 56px; border-top: 1px solid var(--artifact-border-light); }
+.creds > div { padding: 22px 24px 0 0; }
+.creds > div + div { padding-left: 24px; border-left: 1px solid var(--artifact-border-light); }
+.creds p { margin: 0; color: var(--artifact-text-primary); font-size: 15px; line-height: 1.5; }
+
+/* CONNECT */
+.connect { text-align: left; }
+.connect-box { background: var(--artifact-text-highlight); color: var(--artifact-text-primary); border-radius: 8px; padding: clamp(32px, 6vw, 72px); }
+.connect-box p.big { font-size: clamp(1.5rem, 3.4vw, 2.4rem); font-weight: 300; line-height: 1.25; letter-spacing: -0.02em; margin: 0 0 36px; max-width: 800px; }
+.connect-box .btn.primary { background: var(--artifact-primary-highlight); border-color: var(--artifact-primary-highlight); color: var(--artifact-text-highlight); }
+.connect-box .btn.primary:hover { background: var(--artifact-primary-hover); border-color: var(--artifact-primary-hover); }
+.connect-box .eyebrow { color: var(--artifact-text-primary); opacity: .8; }
+footer { padding: 36px 0 48px; border-top: 1px solid var(--artifact-border-light); }
+.foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: var(--mono); font-size: 12px; color: var(--artifact-text-secondary); letter-spacing: .04em; }
+
+/* MOTION */
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
+.js .reveal.in { opacity: 1; transform: none; }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+@keyframes flow { to { stroke-dashoffset: -20; } }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .reveal { opacity: 1; transform: none; }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 960px) {
+  .about-grid, .focus-grid, .role-wrap, .tools { grid-template-columns: 1fr; gap: 40px; }
+  .diagram { position: static; }
+  .tabs { flex-direction: row; flex-wrap: wrap; gap: 8px; border-top: 0; }
+  .tabs button { border: 1px solid var(--artifact-border-dark); border-radius: 4px; padding: 10px 14px; font-size: .95rem; }
+  .tabs button[aria-selected="true"] { padding-left: 14px; background: var(--artifact-selected); border-color: var(--artifact-primary-brand); }
+  .tabs button .pt { display: none; }
+  .links a:not(.keep) { display: none; }
+}
+@media screen and (max-width: 640px) {
+  section { padding: 80px 0; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stat:nth-child(3) { padding-left: 0; border-left: 0; }
+  .stat:nth-child(n+3) { margin-top: 8px; }
+  .creds { grid-template-columns: 1fr; }
+  .creds > div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--artifact-border-light); margin-top: 18px; padding-top: 18px; }
+  .panel-box, .role-box, .tool { padding: 24px; }
+  .bar { font-size: 0; padding: 0; }
+  .sbtn .t { font-size: 10px; }
+  .gantt { height: 96px; }
+}
+
+
+/* ===== LIGHT / ENERGETIC OVERRIDES ===== */
+body { background-color: var(--artifact-background); color: var(--artifact-text-primary); }
+body::before { -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 10%, transparent 70%); mask-image: radial-gradient(ellipse at 50% 0%, #000 10%, transparent 70%); }
+main > section:nth-of-type(even) { background: var(--artifact-tint); }
+nav.top { background: color-mix(in srgb, var(--artifact-background-light) 82%, transparent); }
+.logo i { background: var(--artifact-spark); }
+
+h1 { font-weight: 700; letter-spacing: -0.045em; font-size: clamp(3.6rem, 12vw, 8.4rem); line-height: .9; }
+h2 { font-weight: 650; letter-spacing: -0.035em; }
+h3 { font-weight: 650; }
+.hero h1 span { color: var(--artifact-primary-brand); }
+.lede { font-weight: 450; max-width: 700px; color: var(--artifact-text-primary); }
+.eyebrow { color: var(--artifact-primary-hover); font-weight: 600; }
+.eyebrow::before { background: var(--artifact-spark); width: 28px; height: 2px; }
+.muted { color: var(--artifact-text-secondary); }
+
+.hero::before, .hero::after { content: ""; position: absolute; border-radius: 50%; pointer-events: none; z-index: 0; }
+.hero::before { width: min(78vw, 980px); height: min(78vw, 980px); top: -26%; right: -18%; background: radial-gradient(closest-side, color-mix(in srgb, var(--artifact-primary-brand) 22%, transparent), transparent); }
+.hero::after { width: min(52vw, 640px); height: min(52vw, 640px); bottom: -22%; left: -12%; background: radial-gradient(closest-side, color-mix(in srgb, var(--artifact-spark) 17%, transparent), transparent); }
+#net { z-index: 1; }
+
+.open-badge { display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 10px 16px; border-radius: 999px; background: var(--artifact-background-light); color: var(--artifact-text-primary); border: 1px solid color-mix(in srgb, var(--artifact-spark) 45%, var(--artifact-background)); box-shadow: var(--artifact-shadow); margin-bottom: 30px; }
+.open-badge i { width: 9px; height: 9px; border-radius: 50%; background: var(--artifact-spark); animation: pulse 1.8s ease-in-out infinite; }
+
+.term { background: var(--artifact-background-light); border: 1px solid var(--artifact-border-light); box-shadow: var(--artifact-shadow); color: var(--artifact-text-secondary); }
+.term b, .term .caret { color: var(--artifact-spark); }
+.term .caret { background: var(--artifact-spark); }
+
+.btn { background: var(--artifact-background-light); color: var(--artifact-text-primary); border-color: var(--artifact-border-dark); font-weight: 600; border-radius: 999px; padding: 14px 24px; }
+.btn:hover { border-color: var(--artifact-primary-brand); background: var(--artifact-selected); color: var(--artifact-primary-hover); transform: translateY(-2px); }
+.btn.primary { background: var(--artifact-primary-brand); border-color: var(--artifact-primary-brand); color: var(--artifact-on-brand); box-shadow: 0 10px 26px color-mix(in srgb, var(--artifact-primary-brand) 38%, transparent); }
+.btn.primary:hover { background: var(--artifact-primary-hover); border-color: var(--artifact-primary-hover); color: var(--artifact-on-brand); }
+
+.stats { border-top: 0; gap: 14px; max-width: 980px; }
+.stat, .stat + .stat { padding: 22px 22px 20px; background: var(--artifact-background-light); border: 1px solid var(--artifact-border-light); border-radius: 16px; box-shadow: var(--artifact-shadow); }
+.stat:nth-child(n+3) { margin-top: 0; }
+.stat .n { font-weight: 700; color: var(--artifact-primary-brand); letter-spacing: -0.04em; }
+.stat .n sup { color: var(--artifact-spark); }
+.stat:nth-child(2) .n { color: var(--artifact-spark); }
+
+.thesis { background: var(--artifact-primary-brand); color: var(--artifact-on-brand); border-radius: 18px; box-shadow: 0 16px 40px color-mix(in srgb, var(--artifact-primary-brand) 32%, transparent); }
+.thesis p { font-weight: 500; }
+.thesis em { color: var(--artifact-on-brand); background: none; padding: 0; border-radius: 0; font-style: normal; font-weight: 800; }
+.about-text .lead { font-weight: 450; }
+.about-text p.body { color: var(--artifact-text-secondary); }
+.about-text p.body strong { color: var(--artifact-text-primary); font-weight: 650; }
+
+.diagram, .panel-box, .tool, .role-box { background: var(--artifact-background-light); border: 1px solid var(--artifact-border-light); border-radius: 18px; box-shadow: var(--artifact-shadow); }
+.seg { border-radius: 999px; border-color: var(--artifact-border-dark); }
+.seg button { background: var(--artifact-background-light); color: var(--artifact-text-secondary); font-weight: 600; }
+.seg button[aria-pressed="true"] { background: var(--artifact-primary-brand); color: var(--artifact-on-brand); }
+#sc-svg .pill { fill: var(--artifact-background-light); stroke: var(--artifact-border-dark); }
+#sc-svg .node text { fill: var(--artifact-text-primary); font-weight: 600; }
+#sc-svg .node:hover .pill, #sc-svg .node.sel .pill, #sc-svg .node:focus-visible .pill { fill: var(--artifact-selected); stroke: var(--artifact-primary-brand); }
+#sc-svg .edge { stroke: var(--artifact-primary-brand); }
+#sc-svg .core rect { fill: var(--artifact-primary-brand); stroke: var(--artifact-primary-brand); }
+#sc-svg .core text { fill: var(--artifact-on-brand); font-weight: 700; }
+.cap .k { color: var(--artifact-spark); font-weight: 700; }
+
+.tabs button { font-weight: 550; }
+.tabs button[aria-selected="true"] { color: var(--artifact-primary-brand); font-weight: 650; }
+.tabs button[aria-selected="true"] .pt { background: var(--artifact-spark); }
+.chip { background: var(--artifact-selected); border-color: transparent; color: var(--artifact-primary-hover); font-weight: 600; border-radius: 999px; padding: 8px 14px; }
+.chain .step { background: var(--artifact-background-light); border-radius: 999px; padding: 9px 14px; }
+.chain .step.lit { border-color: var(--artifact-primary-brand); background: var(--artifact-selected); color: var(--artifact-primary-hover); font-weight: 600; }
+.chain .sep.lit { color: var(--artifact-spark); }
+.label-sm { color: var(--artifact-text-secondary); font-weight: 600; }
+
+.badge { border-radius: 999px; font-weight: 600; }
+.badge.live { color: var(--artifact-positive); border-color: color-mix(in srgb, var(--artifact-positive) 50%, var(--artifact-background-light)); background: color-mix(in srgb, var(--artifact-positive) 10%, var(--artifact-background-light)); }
+.tool h3 { font-weight: 700; }
+.sbtn .dot { background: var(--artifact-background-light); }
+.sbtn.done .dot { border-color: var(--artifact-primary-brand); }
+.sbtn.done .dot::after { background: var(--artifact-primary-brand); }
+.sbtn.cur .dot { background: var(--artifact-selected); box-shadow: 0 0 0 4px color-mix(in srgb, var(--artifact-spark) 30%, transparent); }
+.sbtn.cur .dot::after { background: var(--artifact-spark); }
+.sbtn.cur .t { font-weight: 700; }
+.stepper .prog { background: var(--artifact-spark); height: 2px; }
+.step-detail b { font-weight: 650; }
+
+.bar { background: var(--artifact-background-light); color: var(--artifact-text-secondary); border-radius: 999px; font-weight: 600; }
+.bar:hover { border-color: var(--artifact-primary-brand); color: var(--artifact-primary-hover); }
+.bar.sel { background: var(--artifact-primary-brand); border-color: var(--artifact-primary-brand); color: var(--artifact-on-brand); box-shadow: 0 6px 18px color-mix(in srgb, var(--artifact-primary-brand) 36%, transparent); }
+.role-box .meta { color: var(--artifact-spark); font-weight: 700; }
+.role-box li b { font-weight: 650; }
+.role-box li::before { background: var(--artifact-spark); height: 2px; }
+
+.fbtn { background: var(--artifact-background-light); border-radius: 999px; font-weight: 600; }
+.fbtn:hover { border-color: var(--artifact-primary-brand); color: var(--artifact-primary-hover); }
+.fbtn[aria-pressed="true"] { background: var(--artifact-primary-brand); border-color: var(--artifact-primary-brand); color: var(--artifact-on-brand); box-shadow: 0 8px 20px color-mix(in srgb, var(--artifact-primary-brand) 34%, transparent); }
+.skill { background: var(--artifact-background-light); font-weight: 500; }
+.skill.hit { background: var(--artifact-selected); border-color: var(--artifact-primary-brand); color: var(--artifact-primary-hover); font-weight: 600; }
+.skill.dim { opacity: .35; }
+
+.quote { font-weight: 450; }
+.who { color: var(--artifact-spark); font-weight: 700; }
+
+.connect-box { background: var(--artifact-primary-brand); color: var(--artifact-on-brand); border-radius: 28px; position: relative; overflow: hidden; box-shadow: 0 24px 60px color-mix(in srgb, var(--artifact-primary-brand) 36%, transparent); }
+.connect-box > * { position: relative; z-index: 1; }
+.connect-box p.big { font-weight: 600; letter-spacing: -0.03em; color: var(--artifact-on-brand); }
+.connect-box .eyebrow { color: var(--artifact-on-brand); opacity: 1; }
+.connect-box .eyebrow::before { background: var(--artifact-on-brand); }
+.seek { border-top-color: color-mix(in srgb, var(--artifact-on-brand) 38%, transparent); }
+.seek-item + .seek-item { border-left-color: color-mix(in srgb, var(--artifact-on-brand) 38%, transparent); }
+.seek-item p:not(.label-sm) { color: var(--artifact-on-brand); }
+.connect-box .label-sm { color: var(--artifact-on-brand); opacity: .85; }
+.connect-box .btn.primary { background: var(--artifact-background-light); border-color: var(--artifact-background-light); color: var(--artifact-primary-brand); box-shadow: none; }
+.connect-box .btn.primary:hover { background: var(--artifact-selected); border-color: var(--artifact-selected); color: var(--artifact-primary-hover); }
+.connect-box .btn:not(.primary) { background: transparent; color: var(--artifact-on-brand); border-color: color-mix(in srgb, var(--artifact-on-brand) 55%, transparent); }
+.connect-box .btn:not(.primary):hover { background: color-mix(in srgb, var(--artifact-on-brand) 16%, transparent); color: var(--artifact-on-brand); border-color: var(--artifact-on-brand); }
+footer { border-top-color: var(--artifact-border-light); }
+
+
+/* ===== READABILITY PASS ===== */
+:root, html[data-theme='dark'] { --artifact-spark-text: #c93410; --artifact-band: color-mix(in srgb, #2457ff 74%, #0b1220); }
+/* solid, deeper blue bands: white text ~8:1 */
+.thesis, .connect-box { background: var(--artifact-band); }
+.thesis p { color: #ffffff; font-weight: 600; }
+.connect-box, .connect-box p, .connect-box .eyebrow, .connect-box .label-sm, .seek-item p, .seek-item p:not(.label-sm) { color: #ffffff; opacity: 1; }
+.connect-box p.big { font-size: clamp(1.6rem, 3.4vw, 2.5rem); font-weight: 700; line-height: 1.22; }
+.connect-box .eyebrow { font-size: 13px; font-weight: 700; }
+.connect-box .label-sm { font-size: 13px; font-weight: 700; letter-spacing: .1em; }
+.seek-item p:not(.label-sm) { font-size: 16.5px; line-height: 1.55; font-weight: 500; }
+.connect-box .btn:not(.primary) { color: #ffffff; border-color: #ffffff; font-weight: 700; }
+.connect-box .btn.primary { background: #ffffff; color: var(--artifact-band); font-weight: 700; }
+/* coral used as text only in a darker, readable tone */
+.cap .k, .who, .role-box .meta, .stat .n sup, .stat:nth-child(2) .n { color: var(--artifact-spark-text); }
+/* slightly larger small text */
+.stat .l { font-size: 14.5px; color: var(--artifact-text-secondary); }
+.sbtn .t { font-size: 12.5px; color: var(--artifact-text-secondary); }
+.sbtn.cur .t { color: var(--artifact-text-primary); }
+.axis span { font-size: 12.5px; color: var(--artifact-text-secondary); }
+.label-sm { font-size: 12.5px; color: var(--artifact-text-secondary); }
+.cap p, .step-detail, .role-box li { font-size: 15.5px; }
+.about-text p.body, .panel-box .about-line, .sec-head p, .fine, .mentorline { color: var(--artifact-text-secondary); }
+.fine { font-size: 14px; }
+.chip, .skill, .fbtn { font-size: 13px; }
+.skill { font-size: 15.5px; }
+.skill.dim { opacity: .6; }
+.tabs button { color: var(--artifact-text-secondary); }
+.tabs button:hover { color: var(--artifact-text-primary); }
+.tabs button[aria-selected="true"] { color: var(--artifact-primary-hover); }
+.chain .step { color: var(--artifact-text-secondary); font-size: 12.5px; }
+.foot { font-size: 13px; }
+
+/* PRINT */
+@media print {
+  @page { size: auto !important; }
+  body { background: #fff; color: #111; padding: 0.4in 0.5in; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  body::before, #net, nav.top, .cta-row, .seg, .filters, .tabs, .term, .caret { display: none !important; }
+  :root, html[data-theme='dark'] {
+    --artifact-background: #ffffff; --artifact-background-light: #f6f7f9; --artifact-background-mid: #eceef2;
+    --artifact-border-light: #d5d8df; --artifact-border-dark: #b9bdc7; --artifact-primary-brand: #2f55d4;
+    --artifact-primary-hover: #2f55d4; --artifact-selected: #e8edff; --artifact-text-primary: #111318;
+    --artifact-text-secondary: #4a4f5c; --artifact-text-highlight: #e8edff; --artifact-primary-highlight: #111318;
+  }
+  .hero { min-height: 0; padding: 0 0 24px; }
+  section { padding: 28px 0; break-inside: avoid; }
+  .panel { display: block !important; margin-bottom: 14px; }
+  .panel-box { min-height: 0; }
+  .js .reveal { opacity: 1 !important; transform: none !important; }
+  .diagram { position: static; }
+  .bar.sel { color: #fff; }
+  .connect-box { box-shadow: none; background: #1f3fb3 !important; }
+  .thesis { background: #1f3fb3 !important; }
+  .connect-box .btn.primary { color: #111; }
+  .hero::before, .hero::after, .connect-box::after { display: none; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+#sc-svg .core { opacity: 0; transition: opacity .6s; pointer-events: none; }
+#sc-svg.on .core { opacity: 1; }
+#sc-svg .core rect { fill: var(--artifact-selected); stroke: var(--artifact-primary-brand); stroke-width: 1.2; }
+#sc-svg .core text { fill: var(--artifact-primary-hover); font-family: var(--mono); font-size: 12.5px; letter-spacing: .08em; text-anchor: middle; dominant-baseline: central; text-transform: uppercase; }
+.quote { font-size: clamp(1.1rem, 2.1vw, 1.45rem); font-weight: 300; line-height: 1.5; letter-spacing: -0.01em; margin: 0 0 22px; color: var(--artifact-text-primary); }
+.who { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--artifact-primary-brand); margin: 0; }
+.mentorline { margin-top: 28px; font-size: 14.5px; color: var(--artifact-text-secondary); }
+.mentorline b { color: var(--artifact-text-primary); font-weight: 500; }
+.seek { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.55); margin: 0 0 36px; }
+.seek-item { padding: 22px 24px 0 0; }
+.seek-item + .seek-item { padding-left: 24px; border-left: 1px solid rgba(255,255,255,0.55); }
+.seek-item p:not(.label-sm) { margin: 0; font-size: 16.5px; line-height: 1.55; font-weight: 500; color: #ffffff; }
+.connect-box .label-sm { color: #ffffff; }
+@media screen and (max-width: 760px) {
+  .seek { grid-template-columns: 1fr; }
+  .seek-item + .seek-item { padding-left: 0; border-left: 0; border-top: 1px solid rgba(255,255,255,0.55); margin-top: 18px; padding-top: 18px; }
+}
+
+/* ===== FINAL GUARD: all text inside the blue bands is white ===== */
+.connect-box, .connect-box .eyebrow, .connect-box p, .connect-box p.big, .connect-box .label-sm,
+.connect-box .seek-item p, .connect-box .seek-item p:not(.label-sm) { color: #ffffff !important; opacity: 1 !important; }
+.connect-box .eyebrow::before { background: #ffffff !important; }
+.connect-box .btn.primary { color: var(--artifact-band) !important; background: #ffffff !important; }
+.connect-box .btn:not(.primary) { color: #ffffff !important; border-color: #ffffff !important; background: transparent !important; }
+.connect-box .btn:not(.primary):hover { background: rgba(255,255,255,0.18) !important; }
+.thesis, .thesis p, .thesis em { color: #ffffff !important; }
+</style>
+</head>
+<body>
+
+<nav class="top" data-glean-id="nav-top">
+  <div class="nav-in">
+    <a class="logo" href="#top"><i></i>GK / KHALIL</a>
+    <div class="links" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#journey">Journey</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#connect" class="keep">Connect</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- HERO -->
+<header class="hero" data-glean-id="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="open-badge" data-glean-id="hero-open-badge"><i></i> Open to strategic roles &middot; new industries</div>
+    <p class="eyebrow">Director, Service Design &middot; Co-Chair, WE LEaD EMEA</p>
+    <h1>Greta<br><span>Khalil</span></h1>
+    <p class="lede">Service design and consulting leader who connects customer goals, technology, commercial models and delivery to shape complex B2B solutions.</p>
+    <div class="term" data-glean-id="hero-terminal" aria-label="service design equals people plus processes plus technology"><b>&gt;</b> <span id="typed"></span><span class="caret"></span></div>
+    <div class="cta-row">
+      <a class="btn primary" href="https://www.linkedin.com/in/greta-khalil/" target="_blank" rel="noopener noreferrer" data-glean-id="hero-cta-linkedin">Connect on LinkedIn <span class="arr">&rarr;</span></a>
+      <a class="btn" href="#about" data-glean-id="hero-cta-about">Read my story <span class="arr">&darr;</span></a>
+    </div>
+    <div class="stats" data-glean-id="hero-stats">
+      <div class="stat"><div class="n"><span data-count="18">18</span><sup>+</sup></div><div class="l">years across telecom and B2B technology</div></div>
+      <div class="stat"><div class="n"><span data-count="15">15</span></div><div class="l">speakers at the 2025 WE LEaD symposium in South Africa, which I co-organized</div></div>
+      <div class="stat"><div class="n"><span data-count="230">230</span></div><div class="l">attendees at that symposium: 80 in person, 150 virtual</div></div>
+      <div class="stat"><div class="n"><span data-count="4">4</span></div><div class="l">languages: English, French, Arabic, Spanish</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" data-glean-id="section-about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">About</p>
+      <h2>Where the signed deal meets the service behind it.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal" data-glean-id="about-text">
+        <p class="lead">Over the past years, I have delivered significant achievements in service design and strategic account management.</p>
+        <div class="thesis" data-glean-id="about-thesis">
+          <p>I craft integrated service designs for complex deals, blending <em>people, processes, and technology</em>.</p>
+        </div>
+        <p class="body">As recent accomplishments, I successfully <strong>secured the Airtel Africa MS renewal and new scope deal</strong>, <strong>contributed to the Orange Business win</strong> in the Europe region, and participated in <strong>E2E package reviews and repository updates</strong> to drive quality assurance and process optimization across the contract management framework.</p>
+        <p class="body">I was recognized for leadership and collaboration through my nomination as <strong>Co-Chair of the WE LEaD community</strong> at CSG, where I co-organized the 2025 South Africa symposium (15 speakers, 80 in-person and 150 virtual attendees).</p>
+        <p class="body">I also actively <strong>mentor new colleagues</strong> within the Service Design team and further developed my leadership and talent development capabilities through the BEBS Leadership and Talent Management program.</p>
+      </div>
+      <div class="diagram reveal" data-glean-id="about-diagram">
+        <div class="seg" role="group" aria-label="Deal view">
+          <button type="button" id="mode-trad" aria-pressed="false">Handoffs</button>
+          <button type="button" id="mode-super" aria-pressed="true">With service design</button>
+        </div>
+        <svg id="sc-svg" class="on" viewBox="0 0 420 420" role="img" aria-label="Sales, solutioning, engineering, finance and delivery, shown separate or connected through service design"></svg>
+        <div class="cap" aria-live="polite"><div class="k" id="cap-k">Service design</div><p id="cap-p"></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" data-glean-id="section-expertise">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Expertise</p>
+      <h2>Six ways service design shows up in a deal.</h2>
+      <p>Hover over an area to see how it works in practice.</p>
+    </div>
+    <div class="focus-grid reveal">
+      <div class="tabs" id="focus-tabs" role="tablist" aria-label="Expertise areas" data-glean-id="focus-tabs"></div>
+      <div id="focus-panels" data-glean-id="focus-panels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership" data-glean-id="section-leadership">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Leadership &amp; community</p>
+      <h2>Leading people is part of the job, not an add-on.</h2>
+      <p>Hover over a step to follow each story.</p>
+    </div>
+    <div class="thesis reveal" data-glean-id="leadership-quote" style="margin-bottom:24px;">
+      <p>Managers must be mentors. Managers must be coaches. Managers must follow through and follow up.</p>
+    </div>
+    <p class="fine reveal" style="margin:0 0 32px;">From my LinkedIn post, &ldquo;My concept of Managers&rdquo;.</p>
+    <div class="tools reveal" id="tools-grid"></div>
+    <p class="mentorline reveal" data-glean-id="leadership-speaking"><b>Recently:</b> panelist on AI and Product Strategy at the HEC Paris Executive MBA Reunion (June 2026).</p>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" data-glean-id="section-journey">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Journey</p>
+      <h2>Eighteen years, from network integration to shaping complex deals.</h2>
+      <p>From telecom software integration at Nokia, through charging, billing and pre-sales, to service design at CSG. Hover over a role.</p>
+    </div>
+    <div class="reveal" data-glean-id="journey-timeline">
+      <div class="gantt" id="gantt"></div>
+      <div class="axis" id="axis"></div>
+    </div>
+    <div class="role-wrap reveal">
+      <div class="tabs" id="role-tabs" role="tablist" aria-label="Roles" data-glean-id="journey-tabs"></div>
+      <div id="role-panels" data-glean-id="journey-panels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLKIT -->
+<section id="toolkit" data-glean-id="section-toolkit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Toolkit</p>
+      <h2>Capabilities, grouped by how I use them.</h2>
+      <p>Hover over an area to light up the matching capabilities. Everything stays visible.</p>
+    </div>
+    <div class="reveal">
+      <div class="filters" id="filters" role="group" aria-label="Filter capabilities" data-glean-id="toolkit-filters"></div>
+      <div class="skills" id="skills" data-glean-id="toolkit-skills"></div>
+    </div>
+    <div class="creds reveal" data-glean-id="credentials">
+      <div><p class="label-sm">Education</p><p>Postgraduate degree, Leadership &amp; Talent Management<br><span class="muted">BEBS Barcelona Executive Business School, 2023</span><br><br>Bachelor of Engineering, Computer &amp; Communication Engineering<br><span class="muted">Notre Dame University &ndash; Louaize, Lebanon, 2007</span></p></div>
+      <div><p class="label-sm">Professional development</p><p>University of Michigan: Leading People &amp; Teams (2022) &middot; IDEO U: Design Thinking (2022) &middot; UC Irvine Paul Merage: Hiring Practices (2021) &middot; Digital Marketing Institute: CDMP (2017) &middot; Microsoft Dynamics 365 certified (2017)</p></div>
+      <div><p class="label-sm">Languages</p><p>English: full professional<br>French: native or bilingual<br>Arabic: native or bilingual<br>Spanish: elementary</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICES -->
+<section id="voices" data-glean-id="section-voices">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">In their words</p>
+      <h2>What colleagues have written about working with me.</h2>
+      <p>Recommendations from my LinkedIn profile. Hover over a name to read.</p>
+    </div>
+    <div class="focus-grid reveal">
+      <div class="tabs" id="voice-tabs" role="tablist" aria-label="Recommendations" data-glean-id="voices-tabs"></div>
+      <div id="voice-panels" data-glean-id="voices-panels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section id="connect" class="connect" data-glean-id="section-connect">
+  <div class="wrap">
+    <div class="connect-box reveal">
+      <p class="eyebrow">Open to what&rsquo;s next</p>
+      <p class="big">I&rsquo;m looking for my next move: a more strategic role, in a new industry. If you&rsquo;re building something where complex deals, customer growth and delivery have to work as one, I&rsquo;d like to talk.</p>
+      <div class="seek" data-glean-id="connect-interests">
+        <div class="seek-item" data-glean-id="connect-interest-strategic"><p class="label-sm">Strategic scope</p><p>Roles that shape direction: complex solutions, commercial models and customer growth, not only the deal in front of me.</p></div>
+        <div class="seek-item" data-glean-id="connect-interest-industry"><p class="label-sm">A new industry</p><p>Eighteen years in telecom taught me complex B2B technology. I&rsquo;m looking beyond it, to industries facing similar complexity.</p></div>
+        <div class="seek-item" data-glean-id="connect-interest-bring"><p class="label-sm">What I bring</p><p>Pre-sales, solution architecture, service design and commercial governance, plus team leadership and mentoring.</p></div>
+      </div>
+      <div class="cta-row" style="margin:0;">
+        <a class="btn primary" href="https://www.linkedin.com/in/greta-khalil/" target="_blank" rel="noopener noreferrer" data-glean-id="connect-cta-linkedin">Start a conversation on LinkedIn <span class="arr">&rarr;</span></a>
+        <a class="btn" href="#journey" data-glean-id="connect-cta-journey">See the journey <span class="arr">&uarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>Greta Khalil &middot; Barcelona, Spain</span>
+    <span>Views expressed are my own.</span>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+function el(tag, cls, html){ var e=document.createElement(tag); if(cls) e.className=cls; if(html!=null) e.innerHTML=html; return e; }
+
+/* ---------- Typed line ---------- */
+(function(){
+  var full = 'service design = people + processes + technology \u2192 outcomes that hold after signature';
+  var t = document.getElementById('typed');
+  if (RM) { t.textContent = full; return; }
+  var i = 0;
+  (function tick(){ t.textContent = full.slice(0, ++i); if (i < full.length) setTimeout(tick, 30); })();
+})();
+
+/* ---------- Count up ---------- */
+(function(){
+  var nodes = document.querySelectorAll('[data-count]');
+  if (RM) return;
+  nodes.forEach(function(n){ n.textContent = '0'; });
+  var start = performance.now(), dur = 1400;
+  function step(now){
+    var p = Math.min((now - start) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+    nodes.forEach(function(n){ n.textContent = Math.round(+n.dataset.count * e); });
+    if (p < 1) requestAnimationFrame(step);
+  }
+  setTimeout(function(){ requestAnimationFrame(step); }, 300);
+})();
+
+/* ---------- Hero network ---------- */
+(function(){
+  var c = document.getElementById('net'), ctx = c.getContext('2d');
+  var w, h, dpr, pts = [], mouse = {x: -9999, y: -9999}, running = true;
+  var hero = c.parentElement;
+  function size(){
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = c.clientWidth; h = c.clientHeight;
+    c.width = w * dpr; c.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var n = w < 700 ? 34 : 72; pts = [];
+    for (var i = 0; i < n; i++) pts.push({ x: Math.random()*w, y: Math.random()*h, vx: (Math.random()-.5)*.35, vy: (Math.random()-.5)*.35, r: Math.random()*1.6 + .8 });
+  }
+  function draw(){
+    ctx.clearRect(0, 0, w, h);
+    var brand = css('--artifact-primary-brand'), dim = css('--artifact-border-dark'), spark = css('--artifact-spark');
+    for (var i = 0; i < pts.length; i++) {
+      var p = pts[i];
+      if (!RM) { p.x += p.vx; p.y += p.vy; if (p.x < 0 || p.x > w) p.vx *= -1; if (p.y < 0 || p.y > h) p.vy *= -1; }
+      for (var j = i + 1; j < pts.length; j++) {
+        var q = pts[j], dx = p.x - q.x, dy = p.y - q.y, d = Math.sqrt(dx*dx + dy*dy);
+        if (d < 130) { ctx.globalAlpha = (1 - d/130) * .32; ctx.strokeStyle = brand; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke(); }
+      }
+      var mx = p.x - mouse.x, my = p.y - mouse.y, md = Math.sqrt(mx*mx + my*my);
+      if (md < 170) { ctx.globalAlpha = (1 - md/170) * .9; ctx.strokeStyle = brand; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke(); }
+      ctx.globalAlpha = md < 170 ? 1 : .75; ctx.fillStyle = md < 170 ? brand : (i % 6 === 0 ? spark : brand);
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r + (i % 6 === 0 ? 1.2 : .4), 0, 6.2832); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+    if (running && !RM) requestAnimationFrame(draw);
+  }
+  size(); draw();
+  window.addEventListener('resize', function(){ size(); if (RM) draw(); });
+  hero.addEventListener('mousemove', function(e){ var r = c.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+  hero.addEventListener('mouseleave', function(){ mouse.x = mouse.y = -9999; });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){
+    var vis = es[0].isIntersecting; if (vis && !running) { running = true; requestAnimationFrame(draw); } running = vis;
+  }).observe(hero);
+})();
+
+/* ---------- Generic tabs (hover + click + keyboard) ---------- */
+function makeTabs(tabsEl, panelsEl, items, renderPanel, idPrefix, startIdx){
+  var tabs = [], panels = [];
+  items.forEach(function(it, i){
+    var b = el('button', '', '<span>' + it.tab + '</span><span class="pt"></span>');
+    b.type = 'button'; b.setAttribute('role', 'tab'); b.id = idPrefix + '-tab-' + it.id;
+    b.dataset.gleanId = idPrefix + '-tab-' + it.id;
+    tabsEl.appendChild(b); tabs.push(b);
+    var p = el('div', 'panel'); p.setAttribute('role', 'tabpanel'); p.setAttribute('aria-labelledby', b.id);
+    p.dataset.gleanId = idPrefix + '-panel-' + it.id;
+    renderPanel(p, it); panelsEl.appendChild(p); panels.push(p);
+    b.addEventListener('click', function(){ select(i, true); });
+    var hoverT = null;
+    b.addEventListener('mouseenter', function(){ clearTimeout(hoverT); hoverT = setTimeout(function(){ select(i, false); }, 70); });
+    b.addEventListener('mouseleave', function(){ clearTimeout(hoverT); });
+    b.addEventListener('keydown', function(e){
+      var n = items.length;
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { e.preventDefault(); select((i+1)%n, true); }
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); select((i-1+n)%n, true); }
+    });
+  });
+  function select(i, focus){
+    tabs.forEach(function(t, k){ t.setAttribute('aria-selected', k === i); t.tabIndex = k === i ? 0 : -1; });
+    panels.forEach(function(p, k){ p.classList.toggle('active', k === i); });
+    if (focus) tabs[i].focus();
+    if (tabsEl.onselect) tabsEl.onselect(i);
+  }
+  select(startIdx || 0, false);
+  return select;
+}
+
+/* ---------- Service design diagram ---------- */
+(function(){
+  var NODES = [
+    { id: 'Sales', d: `Partners with sales on complex Managed Services deals. Earlier in my career, I streamlined RFQ/RFI/RFP processes with sales to improve lead qualification and deal closures.` },
+    { id: 'Solutioning', d: `Works with solution consulting to shape the deal and craft integrated service designs that blend people, processes, and technology.` },
+    { id: 'Engineering', d: `Works closely with Product Line Teams and corporate functions to create solutions that work for both CSG and its partners.` },
+    { id: 'Finance', d: `Reviews cost structures to shape commercial models, and makes sure large proposals reach Finance approval accurate and ready for sign-off.` },
+    { id: 'Delivery', d: `Ensures a seamless handover to delivery and in-life service teams, so customers experience continuity and confidence after the deal is signed.` }
+  ];
+  var TRAD = `Each function works its own part and hands off to the next. Hover over a node to see how service design works with it.`;
+  var SUPER = `Service design sits in the middle, tying sales, solutioning, engineering, finance and delivery into one offer that holds together after signature.`;
+  var svg = document.getElementById('sc-svg'), NS = 'http://www.w3.org/2000/svg';
+  var cx = 210, cy = 210, R = 142, pos = [];
+  NODES.forEach(function(n, i){ var a = -Math.PI/2 + i * 2 * Math.PI / 5; pos.push({ x: cx + R*Math.cos(a), y: cy + R*Math.sin(a) }); });
+  function s(tag, attrs){ var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+  pos.forEach(function(p){ svg.appendChild(s('line', { 'class': 'edge', x1: cx, y1: cy, x2: p.x, y2: p.y })); });
+  var core = s('g', { 'class': 'core' });
+  core.appendChild(s('rect', { x: cx - 68, y: cy - 20, width: 136, height: 40, rx: 6 }));
+  var ct = s('text', { x: cx, y: cy }); ct.textContent = 'Service design'; core.appendChild(ct);
+  svg.appendChild(core);
+  var nodeEls = [];
+  NODES.forEach(function(n, i){
+    var g = s('g', { 'class': 'node', tabindex: 0, role: 'button', 'aria-label': n.id });
+    g.appendChild(s('rect', { 'class': 'pill', x: pos[i].x - 56, y: pos[i].y - 18, width: 112, height: 36, rx: 6 }));
+    var t = s('text', { x: pos[i].x, y: pos[i].y }); t.textContent = n.id; g.appendChild(t);
+    svg.appendChild(g); nodeEls.push(g);
+    function pick(){ nodeEls.forEach(function(x){ x.classList.remove('sel'); }); g.classList.add('sel');
+      document.getElementById('cap-k').textContent = n.id; document.getElementById('cap-p').textContent = n.d; }
+    g.addEventListener('click', pick);
+    g.addEventListener('mouseenter', pick);
+    g.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+  });
+  var bT = document.getElementById('mode-trad'), bS = document.getElementById('mode-super');
+  function mode(on){
+    svg.classList.toggle('on', on); bS.setAttribute('aria-pressed', on); bT.setAttribute('aria-pressed', !on);
+    nodeEls.forEach(function(x){ x.classList.remove('sel'); });
+    document.getElementById('cap-k').textContent = on ? 'With service design' : 'Handoffs';
+    document.getElementById('cap-p').textContent = on ? SUPER : TRAD;
+  }
+  bT.addEventListener('click', function(){ mode(false); });
+  bS.addEventListener('click', function(){ mode(true); });
+  bT.addEventListener('mouseenter', function(){ mode(false); });
+  bS.addEventListener('mouseenter', function(){ mode(true); });
+  mode(true);
+  if (!RM && 'IntersectionObserver' in window) {
+    var once = new IntersectionObserver(function(es){ if (es[0].isIntersecting) { once.disconnect(); mode(false); setTimeout(function(){ mode(true); }, 900); } }, { threshold: .6 });
+    once.observe(svg);
+  }
+})();
+
+/* ---------- Expertise ---------- */
+(function(){
+  var items = [
+    { id: 'deals', tab: 'Shaping complex deals', title: 'Leading service engagements',
+      line: `I lead transformative service engagements, partnering with sales, solution consulting, and engineering teams to shape and deliver complex Managed Services deals that make an impact.`,
+      chips: ['Managed Services deals', 'Sales partnership', 'Solution consulting', 'Engineering'] },
+    { id: 'design', tab: 'Integrated service design', title: 'Integrated service design',
+      line: `I craft integrated service designs for complex deals, blending people, processes, and technology, and define the team structure, size and locations that fit the solution scope, SLAs and customer requirements.`,
+      chips: ['Team structure & sizing', 'Locations', 'Scope & SLAs', 'Product Line Teams', 'E2E package reviews'] },
+    { id: 'commercial', tab: 'Commercial models', title: 'Shaping commercial models',
+      line: `I shape commercial models by reviewing cost structures and helping craft offers that balance customer needs with CSG objectives, while staying competitive.`,
+      chips: ['Cost structures', 'Offer shaping', 'Financial modeling & risk management', 'Competitive balance'] },
+    { id: 'contracts', tab: 'Contracts & governance', title: 'Guiding contract execution',
+      line: `I guide contract execution, from review and valuation to signing, making sure everything aligns with the bigger picture. For large proposals, I make sure approval materials reach Finance accurate and ready for sign-off.`,
+      chips: ['Contract review', 'Valuation', 'Proposal governance', 'Contract management framework'] },
+    { id: 'accounts', tab: 'Strategic accounts', title: 'Growing strategic accounts',
+      line: `I grow business relationships by driving new initiatives and expanding existing contracts, always aiming for multi-product, multi-year solutions that create long-term value.`,
+      chips: ['Airtel Africa MS renewal & new scope', 'Orange Business win (Europe), contributed', 'Multi-product, multi-year solutions'] },
+    { id: 'handover', tab: 'Handover & continuity', title: 'A seamless handover',
+      line: `I ensure a seamless handover to delivery and in-life service teams, so customers experience continuity and confidence after the deal is signed. Hover over the chain to trace it.`,
+      chain: ['Pursuit', 'Service design', 'Commercial model', 'Contract', 'Handover', 'In-life service'] }
+  ];
+  makeTabs(document.getElementById('focus-tabs'), document.getElementById('focus-panels'), items, function(p, it){
+    var box = el('div', 'panel-box');
+    box.appendChild(el('p', 'label-sm', 'Expertise'));
+    box.appendChild(el('h3', '', it.title));
+    box.appendChild(el('p', 'about-line', it.line));
+    if (it.chain) {
+      box.appendChild(el('p', 'label-sm', 'From pursuit to service'));
+      var ch = el('div', 'chain'), steps = [], seps = [];
+      it.chain.forEach(function(c, i){
+        var st = el('span', 'step', c); st.tabIndex = 0; ch.appendChild(st); steps.push(st);
+        if (i < it.chain.length - 1) { var sp = el('span', 'sep', '\u2192'); ch.appendChild(sp); seps.push(sp); }
+        function light(){ steps.forEach(function(x, k){ x.classList.toggle('lit', k <= i); }); seps.forEach(function(x, k){ x.classList.toggle('lit', k < i); }); }
+        st.addEventListener('mouseenter', light); st.addEventListener('focus', light);
+      });
+      ch.addEventListener('mouseleave', function(){ steps.forEach(function(x){ x.classList.remove('lit'); }); seps.forEach(function(x){ x.classList.remove('lit'); }); });
+      box.appendChild(ch);
+    } else {
+      box.appendChild(el('p', 'label-sm', 'Shows up as'));
+      var cs = el('div', 'chips'); it.chips.forEach(function(c){ cs.appendChild(el('span', 'chip', c)); }); box.appendChild(cs);
+    }
+    p.appendChild(box);
+  }, 'focus', 0);
+})();
+
+/* ---------- Leadership cards ---------- */
+(function(){
+  var CARDS = [
+    { id: 'welead', name: 'WE LEaD', badge: 'Co-Chair, EMEA \u00b7 Current', live: true,
+      desc: `Women Engaged in Leadership, Exploration and Development: the WE LEaD community at CSG. Co-Chair of the EMEA chapter since January 2025.`,
+      steps: [
+        { t: 'Co-Chair', d: `<b>Invited to serve as Co-Chair</b> of the WE LEaD EMEA chapter at CSG International in January 2025.` },
+        { t: 'Empower women', d: `<b>Led initiatives</b> to empower women in leadership.` },
+        { t: 'South Africa', d: `<b>Co-organized the Global Symposium</b> in South Africa (June 2025), shaping a program that fostered diversity, inclusion, and cross-cultural collaboration among industry leaders and customers.` },
+        { t: 'The numbers', d: `<b>15 speakers</b>, <b>80 attendees in person</b> and <b>150 virtual</b>.` } ] },
+    { id: 'mentoring', name: 'Mentoring & talent', badge: 'Ongoing', live: true,
+      desc: `I actively mentor new colleagues within the Service Design team, and keep building the skills behind it.`,
+      steps: [
+        { t: '2021', d: `<b>Hiring Practices</b>, University of California, Irvine, Paul Merage School of Business: diversity and inclusion, onboarding, leadership, recruiting.` },
+        { t: '2022', d: `<b>Leading People &amp; Teams</b> specialization, University of Michigan: inspiring and motivating individuals, managing talent, influencing people, leading teams.` },
+        { t: '2023', d: `<b>Postgraduate degree in Leadership &amp; Talent Management</b>, BEBS Barcelona Executive Business School.` },
+        { t: 'Today', d: `<b>Mentoring new colleagues</b> within the Service Design team.` } ] }
+  ];
+  var grid = document.getElementById('tools-grid');
+  CARDS.forEach(function(T){
+    var card = el('div', 'tool'); card.dataset.gleanId = 'lead-' + T.id;
+    var top = el('div', 'tool-top'); top.appendChild(el('h3', '', T.name)); top.appendChild(el('span', 'badge' + (T.live ? ' live' : ''), T.badge)); card.appendChild(top);
+    card.appendChild(el('p', 'desc', T.desc));
+    var st = el('div', 'stepper'), prog = el('div', 'prog'); st.appendChild(prog);
+    var btns = [], detail = el('div', 'step-detail'); detail.setAttribute('aria-live', 'polite');
+    var cur = 0, timer = null, userTook = false;
+    T.steps.forEach(function(s, i){
+      var b = el('button', 'sbtn', '<span class="dot"></span><span class="t">' + s.t + '</span>'); b.type = 'button';
+      b.addEventListener('click', function(){ userTook = true; stop(); go(i); });
+      b.addEventListener('mouseenter', function(){ userTook = true; stop(); go(i); });
+      st.appendChild(b); btns.push(b);
+    });
+    function go(i){
+      cur = i;
+      btns.forEach(function(b, k){ b.classList.toggle('done', k <= i); b.classList.toggle('cur', k === i); });
+      prog.style.width = (75 * i / (T.steps.length - 1)) + '%';
+      detail.innerHTML = T.steps[i].d;
+    }
+    function stop(){ if (timer) { clearInterval(timer); timer = null; } }
+    function play(){ if (RM || userTook || timer) return; timer = setInterval(function(){ go((cur + 1) % T.steps.length); }, 2800); }
+    card.appendChild(st); card.appendChild(detail); grid.appendChild(card);
+    go(0);
+    card.addEventListener('mouseenter', stop); card.addEventListener('mouseleave', play);
+    if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ es[0].isIntersecting ? play() : stop(); }, { threshold: .5 }).observe(card);
+  });
+})();
+
+/* ---------- Journey ---------- */
+(function(){
+  var MIN = 2008, MAX = 2026.95, SPAN = MAX - MIN;
+  var ROLES = [
+    { id: 'csg-dir', tab: 'CSG: Director, Service Design', short: 'CSG \u00b7 Director', lane: 0, from: 2022.45, to: 2026.9, title: 'Director, Service Design (EMEA)', org: 'CSG, Barcelona', dates: 'June 2022 \u2013 Present',
+      bullets: [
+        `Lead transformative service engagements with sales, solution consulting, and engineering to shape and deliver complex <b>Managed Services deals</b>.`,
+        `Craft <b>integrated service designs</b> for complex deals, blending people, processes, and technology; work with Product Line Teams and corporate functions.`,
+        `Shape <b>commercial models</b> by reviewing cost structures; guide <b>contract execution</b> from review and valuation to signing.`,
+        `Grow relationships by expanding existing contracts toward multi-product, multi-year solutions: secured the <b>Airtel Africa MS renewal and new scope</b>; contributed to the <b>Orange Business win</b> in Europe.`,
+        `Ensure a seamless <b>handover to delivery and in-life service teams</b> after signature.`,
+        `Take part in E2E package reviews and repository updates for quality assurance and process optimization; mentor new Service Design colleagues.`],
+      chips: ['Managed Services', 'Service design', 'Commercial governance', 'Strategic accounts'] },
+    { id: 'welead', tab: 'WE LEaD: Co-Chair, EMEA', short: 'WE LEaD', lane: 1, from: 2025.0, to: 2026.9, title: 'Co-Chair, WE LEaD EMEA', org: 'CSG International', dates: 'January 2025 \u2013 Present',
+      bullets: [
+        `Led initiatives to <b>empower women in leadership</b>.`,
+        `Co-organized the <b>Global Symposium in South Africa</b> (June 2025), shaping a program that fostered diversity, inclusion, and cross-cultural collaboration among industry leaders and customers.`,
+        `15 speakers, 80 attendees in person and 150 virtual.`],
+      chips: ['Community leadership', 'Event program design', 'Diversity & inclusion'] },
+    { id: 'csg-sm', tab: 'CSG: Sr Manager & Principal Consultant', short: 'CSG', lane: 0, from: 2020.55, to: 2022.4, title: 'Senior Manager, Service Design & Principal Consultant (EMEA)', org: 'CSG, Dubai', dates: 'July 2020 \u2013 May 2022',
+      bullets: [
+        `Worked with the sales and delivery organizations to understand and respond to a range of <b>customer needs</b>.`,
+        `Significantly supported the pursuit of a <b>Tier one service provider in the Middle East</b>, from RFx process to contract signature.`,
+        `From 2021: service design and <b>commercial governance</b>. For pursuits with a Managed Services component, defined team structure, sizes and locations in relation to solution scope, SLAs and customer requirements.`,
+        `Acted as guardian of large proposals for CSG Finance, so materials for approval were accurate and ready for sign-off.`],
+      chips: ['RFx to signature', 'Commercial governance', 'Managed Services'] },
+    { id: 'matrixx', tab: 'MATRIXX: Presales Manager, MEA', short: 'MATRIXX', lane: 0, from: 2018.0, to: 2020.5, title: 'Presales Manager, MEA', org: 'MATRIXX Software, Dubai', dates: 'January 2018 \u2013 June 2020',
+      bullets: [
+        `Supported the sales team in business development and in <b>RFQ, RFI and RFP</b> creation: lead qualification, MATRIXX offering, value proposition and final deal closure.`,
+        `Drove growth through key projects, including the <b>Zain Iraq greenfield</b> and the <b>Jawwy MVNO migration</b>.`,
+        `Presented MATRIXX&rsquo;s real-time digital commerce platform to <b>influence customer decisions</b>.`,
+        `Mentored the junior presales team, accelerating their expertise in MATRIXX technology; enhanced presales and marketing collateral.`],
+      chips: ['Pre-sales', 'RFx', 'Digital monetization', 'Mentoring'] },
+    { id: 'rk-csa', tab: 'Redknee: Customer Solution Architect', short: 'Redknee', lane: 0, from: 2015.1, to: 2017.95, title: 'Customer Solution Architect (EMEA & APAC)', org: 'Redknee Inc.', dates: 'February 2015 \u2013 December 2017',
+      bullets: [
+        `Developed <b>strategic account plans</b> that prioritized key tasks for return on investment and customer retention.`,
+        `Contributed to quarterly business reviews, aligning with the sales team.`,
+        `Translated <b>business requirements into architectures and designs</b>; answered functional requirements in RFPs, RFQs and RFIs.`,
+        `Managed the delivery of complex OSS/BSS/VAS integration projects in agile environments; onsite leader for multi-play (prepaid, postpaid, fixed) migrations.`],
+      chips: ['Account plans', 'Solution architecture', 'RFPs', 'OSS/BSS'] },
+    { id: 'rk-sis', tab: 'Redknee: Sr System Integration Specialist', short: 'Redknee', lane: 0, from: 2013.85, to: 2015.05, title: 'Senior System Integration Specialist', org: 'Redknee Inc., Beirut', dates: 'November 2013 \u2013 January 2015',
+      bullets: [
+        `Acted as <b>Tariff Consultant</b>, advising customer teams from engineering to senior leadership.`,
+        `Handled technical queries and emergencies and supervised project roll-outs using Salesforce, JIRA, and Confluence; managed incidents against SLA agreements.`,
+        `Prepared concept papers for promotions using CRM campaign management and real-time campaign software.`],
+      chips: ['Tariff consulting', 'Incident management', 'SLAs'] },
+    { id: 'nokia', tab: 'Nokia Siemens Networks: Project Leader', short: 'Nokia', lane: 0, from: 2008.1, to: 2013.8, title: 'Verification / Integration Project Leader', org: 'Nokia Siemens Networks (now Nokia), Beirut', dates: 'February 2008 \u2013 October 2013',
+      bullets: [
+        `Aligned and controlled all test activities for <b>quality, roadmap adherence and cost of change requests</b>, through to project handover.`,
+        `Led and mentored a <b>team of 6 to 8</b>, providing guidance through implementation.`,
+        `Hands-on verification and integration of telecom software features (voice, data, messaging) with third-party vendors and core mobile network platforms; exposed web service and SOAP APIs for a complete end-to-end environment.`,
+        `Recognized with a Certification of Appreciation (January 2013) and as a &ldquo;ME RSO Hero&rdquo; (December 2012) for BSS projects and a successful IN migration at Touch Lebanon.`],
+      chips: ['Team leadership', 'Integration', 'Quality & cost control', 'Telecom core'] }
+  ];
+  var pct = function(y){ return ((y - MIN) / SPAN * 100); };
+  var gantt = document.getElementById('gantt'), axis = document.getElementById('axis');
+  for (var l = 0; l < 2; l++) { var lb = el('div', 'lane-bg'); lb.style.top = (l * 46 + 38) + 'px'; gantt.appendChild(lb); }
+  [2008, 2010, 2015, 2020, 2025].forEach(function(y){ var s = el('span', '', String(y)); s.style.left = pct(y) + '%'; axis.appendChild(s); });
+  var nowS = el('span', '', 'Now'); nowS.style.left = '100%'; axis.appendChild(nowS);
+  var bars = {};
+  var select = makeTabs(document.getElementById('role-tabs'), document.getElementById('role-panels'), ROLES, function(p, r){
+    var box = el('div', 'role-box');
+    box.appendChild(el('p', 'meta', r.org + ' \u00b7 ' + r.dates));
+    box.appendChild(el('h3', '', r.title));
+    var ul = el('ul'); r.bullets.forEach(function(b){ ul.appendChild(el('li', '', b)); }); box.appendChild(ul);
+    var cs = el('div', 'chips'); r.chips.forEach(function(c){ cs.appendChild(el('span', 'chip', c)); }); box.appendChild(cs);
+    p.appendChild(box);
+  }, 'role', 0);
+  ROLES.forEach(function(r, i){
+    var b = el('button', 'bar', r.short); b.type = 'button';
+    b.style.left = pct(r.from) + '%'; b.style.width = (pct(r.to) - pct(r.from)) + '%'; b.style.top = (r.lane * 46 + 2) + 'px';
+    b.setAttribute('aria-label', r.title + ', ' + r.org + ', ' + r.dates);
+    b.dataset.gleanId = 'timeline-bar-' + r.id;
+    b.addEventListener('click', function(){ select(i, false); });
+    b.addEventListener('mouseenter', function(){ select(i, false); });
+    gantt.appendChild(b); bars[i] = b;
+  });
+  var tabsEl = document.getElementById('role-tabs');
+  tabsEl.onselect = function(i){ Object.keys(bars).forEach(function(k){ bars[k].classList.toggle('sel', +k === i); }); };
+  tabsEl.onselect(0);
+})();
+
+/* ---------- Toolkit ---------- */
+(function(){
+  var CATS = [
+    { id: 'service', name: 'Service design', items: ['Service design', 'Managed Services', 'Solution design', 'Transformation delivery', 'E2E package reviews', 'Handover to delivery', 'ITIL v3 Foundation'] },
+    { id: 'commercial', name: 'Commercial', items: ['Strategic account management', 'Contract & governance management', 'Financial modeling & risk management', 'Commercial models', 'Cost structure review', 'Proposal governance'] },
+    { id: 'presales', name: 'Pre-sales', items: ['RFQ / RFI / RFP responses', 'Pre-sales', 'Solution architecture', 'Account planning', 'Solution demonstrations', 'Solution proposals'] },
+    { id: 'leadership', name: 'Leadership', items: ['Leadership & talent development', 'Mentoring', 'Stakeholder engagement & change management', 'Team leadership (6\u20138 people)', 'Diversity & inclusion', 'Cross-cultural collaboration'] },
+    { id: 'domain', name: 'Domains', items: ['Telecom BSS/OSS', 'Charging & billing', 'Digital monetization', 'MVNO', 'Tariff design', 'Prepaid & postpaid migrations'] },
+    { id: 'tools', name: 'Tools & methods', items: ['Salesforce', 'JIRA', 'Confluence', 'Microsoft Dynamics 365 (certified)', 'Design thinking (IDEO)', 'Digital marketing (CDMP)'] }
+  ];
+  var fEl = document.getElementById('filters'), sEl = document.getElementById('skills');
+  var order = [], max = Math.max.apply(null, CATS.map(function(c){ return c.items.length; }));
+  for (var k = 0; k < max; k++) CATS.forEach(function(c){
+    if (c.items[k]) { var s = el('span', 'skill', c.items[k]); s.dataset.cat = c.id; s.dataset.gleanId = 'skill-' + c.id + '-' + c.items[k].toLowerCase().replace(/[^a-z0-9]+/g, '-'); order.push(s); }
+  });
+  order.forEach(function(s){ sEl.appendChild(s); });
+  var btns = [];
+  function setFilter(id){
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.f === id); });
+    order.forEach(function(s){ var hit = id === 'all' || s.dataset.cat === id; s.classList.toggle('dim', !hit); s.classList.toggle('hit', hit && id !== 'all'); });
+  }
+  [{ id: 'all', name: 'All' }].concat(CATS).forEach(function(c){
+    var b = el('button', 'fbtn', c.name); b.type = 'button'; b.dataset.f = c.id; b.dataset.gleanId = 'filter-' + c.id;
+    b.addEventListener('click', function(){ setFilter(c.id); });
+    b.addEventListener('mouseenter', function(){ setFilter(c.id); });
+    fEl.appendChild(b); btns.push(b);
+  });
+  setFilter('all');
+})();
+
+/* ---------- Voices ---------- */
+(function(){
+  var items = [
+    { id: 'anshul', tab: 'Anshul Kulshrestha',
+      q: `Greta is one of the most dependable and organized people I have worked with. \u2026 Above all, I was impressed with Greta\u2019s dedication, resourcefulness and structured approach to work.`,
+      who: 'Recommendation on LinkedIn \u00b7 MATRIXX Software' },
+    { id: 'chadi', tab: 'Chadi El Samad',
+      q: `Her clear communication skills (verbal and written), neat time management and organizational qualities help her be able to process a substantial amount of workload without compromising the quality of her deliverables. \u2026 Whether you are a colleague, a partner or a customer, ensure you don\u2019t owe her any open action, rest assured that she will tirelessly follow-up on it till proper closure.`,
+      who: 'Recommendation on LinkedIn \u00b7 MATRIXX Software' }
+  ];
+  makeTabs(document.getElementById('voice-tabs'), document.getElementById('voice-panels'), items, function(p, it){
+    var box = el('div', 'panel-box');
+    box.appendChild(el('p', 'label-sm', 'Recommendation'));
+    var q = el('blockquote', 'quote', '\u201c' + it.q + '\u201d'); q.style.margin = '0 0 22px'; box.appendChild(q);
+    box.appendChild(el('p', 'who', it.tab + ' \u00b7 ' + it.who));
+    p.appendChild(box);
+  }, 'voice', 0);
+})();
+
+/* ---------- Reveal + scrollspy ---------- */
+(function(){
+  var rv = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || RM) { rv.forEach(function(e){ e.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .08 });
+    rv.forEach(function(e){ io.observe(e); });
+  }
+  var links = {}; document.querySelectorAll('#navlinks a').forEach(function(a){ links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var so = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { Object.keys(links).forEach(function(k){ links[k].classList.toggle('active', k === e.target.id); }); } });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section').forEach(function(s){ so.observe(s); });
+  }
+})();
+
+/* ---------- Export boilerplate ---------- */
+(function(){
+  if (!window.GleanBridge) return;
+  window.GleanBridge.postMessage({ actionId: 'export-pdf', type: 'glean-add-menu', metadata: { label: 'Export as PDF', icon: 'export' } });
+  window.GleanBridge.onMessage('action', function(data){ if (data.actionId === 'export-pdf') window.print(); });
+})();
+</script>
+</body>
+</html>
