@@ -229,7 +229,7 @@ section { padding: 120px 0; position: relative; }
 .skill { font-size: 15px; padding: 10px 16px; border: 1px solid var(--artifact-border-dark); border-radius: 999px; background: var(--artifact-background-light); color: var(--artifact-text-primary); transition: opacity .3s, border-color .3s, transform .3s; }
 .skill.dim { opacity: .22; transform: scale(.97); }
 .skill.hit { border-color: var(--artifact-primary-brand); }
-.creds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 56px; border-top: 1px solid var(--artifact-border-light); }
+.creds { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 56px; border-top: 1px solid var(--artifact-border-light); }
 .creds > div { padding: 22px 24px 0 0; }
 .creds > div + div { padding-left: 24px; border-left: 1px solid var(--artifact-border-light); }
 .creds p { margin: 0; color: var(--artifact-text-primary); font-size: 15px; line-height: 1.5; }
@@ -477,6 +477,30 @@ footer { border-top-color: var(--artifact-border-light); }
 .connect-box .btn:not(.primary) { color: #ffffff !important; border-color: #ffffff !important; background: transparent !important; }
 .connect-box .btn:not(.primary):hover { background: rgba(255,255,255,0.18) !important; }
 .thesis, .thesis p, .thesis em { color: #ffffff !important; }
+
+/* ===== PHOTOS: WE LEaD symposium (images load from /assets; hidden gracefully if missing) ===== */
+.wl-chip { display: inline-flex; align-items: center; gap: 12px; margin: 0 0 22px; padding: 6px 18px 6px 6px; border-radius: 999px; border: 1px solid var(--artifact-border-dark); background: var(--artifact-background-light); text-decoration: none; font-size: 13.5px; font-weight: 600; color: var(--artifact-text-primary); box-shadow: var(--artifact-shadow); }
+.wl-chip:hover { border-color: var(--artifact-primary-brand); background: var(--artifact-selected); }
+.wl-chip .wl-dot { width: 40px; height: 40px; border-radius: 50%; background: var(--artifact-primary-brand); color: var(--artifact-on-brand); display: grid; place-items: center; font-family: var(--mono); font-size: 11px; font-weight: 700; overflow: hidden; position: relative; }
+.wl-chip .wl-dot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.wl-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 22px 0 6px; }
+.wl-strip figure { margin: 0; }
+.wl-strip img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; border: 1px solid var(--artifact-border-light); box-shadow: var(--artifact-shadow); }
+.wl-strip figcaption { font-size: 12px; color: var(--artifact-text-secondary); margin-top: 6px; line-height: 1.35; }
+.tool .wl-strip { margin: 0 0 22px; }
+.role-box .wl-strip { margin: 0 0 22px; }
+@media screen and (max-width: 640px) {
+  .wl-chip { display: flex; width: 100%; border-radius: 22px; padding-right: 14px; font-size: 13px; line-height: 1.35; }
+  .wl-chip .wl-dot { flex: 0 0 40px; }
+  .wl-strip { grid-template-columns: 1fr 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) { .wl-chip { transition: border-color .2s, background .2s; } }
+@media print { .wl-chip { box-shadow: none; } }
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  .creds { grid-template-columns: 1fr 1fr; }
+  .creds > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .creds > div:nth-child(n+3) { margin-top: 18px; border-top: 1px solid var(--artifact-border-light); padding-top: 18px; }
+}
 </style>
 </head>
 <body>
@@ -503,6 +527,7 @@ footer { border-top-color: var(--artifact-border-light); }
   <div class="wrap">
     <div class="open-badge" data-glean-id="hero-open-badge"><i></i> Open to strategic roles &middot; new industries</div>
     <p class="eyebrow">Director, Service Design &middot; Co-Chair, WE LEaD EMEA</p>
+    <a class="wl-chip" href="#leadership" data-glean-id="hero-welead-chip"><span class="wl-dot" aria-hidden="true">WL<img src="assets/symposium-1.jpg" alt="" onerror="this.remove()"></span>WE LEaD Global Symposium &middot; South Africa &middot; 11&ndash;12 June 2025</a>
     <h1>Greta<br><span>Khalil</span></h1>
     <p class="lede">Service design and consulting leader who connects customer goals, technology, commercial models and delivery to shape complex B2B solutions.</p>
     <div class="term" data-glean-id="hero-terminal" aria-label="service design equals people plus processes plus technology"><b>&gt;</b> <span id="typed"></span><span class="caret"></span></div>
@@ -512,7 +537,7 @@ footer { border-top-color: var(--artifact-border-light); }
     </div>
     <div class="stats" data-glean-id="hero-stats">
       <div class="stat"><div class="n"><span data-count="18">18</span><sup>+</sup></div><div class="l">years across telecom and B2B technology</div></div>
-      <div class="stat"><div class="n"><span data-count="15">15</span></div><div class="l">speakers at the 2025 WE LEaD symposium in South Africa, which I co-organized</div></div>
+      <div class="stat"><div class="n"><span data-count="15">15</span></div><div class="l">speakers at the 2025 WE LEaD Global Symposium in South Africa, which I co-organized</div></div>
       <div class="stat"><div class="n"><span data-count="230">230</span></div><div class="l">attendees at that symposium: 80 in person, 150 virtual</div></div>
       <div class="stat"><div class="n"><span data-count="4">4</span></div><div class="l">languages: English, French, Arabic, Spanish</div></div>
     </div>
@@ -533,7 +558,8 @@ footer { border-top-color: var(--artifact-border-light); }
           <p>I craft integrated service designs for complex deals, blending <em>people, processes, and technology</em>.</p>
         </div>
         <p class="body">As recent accomplishments, I successfully <strong>secured the Airtel Africa MS renewal and new scope deal</strong>, <strong>contributed to the Orange Business win</strong> in the Europe region, and participated in <strong>E2E package reviews and repository updates</strong> to drive quality assurance and process optimization across the contract management framework.</p>
-        <p class="body">I was recognized for leadership and collaboration through my nomination as <strong>Co-Chair of the WE LEaD community</strong> at CSG, where I co-organized the 2025 South Africa symposium (15 speakers, 80 in-person and 150 virtual attendees).</p>
+        <p class="body">I was recognized for leadership and collaboration through my nomination as <strong>Co-Chair of the WE LEaD community</strong> at CSG, where I co-organized the 2025 Global Symposium in South Africa as a member of the planning committee (15 speakers, 80 in-person and 150 virtual attendees).</p>
+        <div class="wl-strip" data-glean-id="about-welead-photos" data-wl="2"></div>
         <p class="body">I also actively <strong>mentor new colleagues</strong> within the Service Design team and further developed my leadership and talent development capabilities through the BEBS Leadership and Talent Management program.</p>
       </div>
       <div class="diagram reveal" data-glean-id="about-diagram">
@@ -576,7 +602,7 @@ footer { border-top-color: var(--artifact-border-light); }
     </div>
     <p class="fine reveal" style="margin:0 0 32px;">From my LinkedIn post, &ldquo;My concept of Managers&rdquo;.</p>
     <div class="tools reveal" id="tools-grid"></div>
-    <p class="mentorline reveal" data-glean-id="leadership-speaking"><b>Recently:</b> panelist on AI and Product Strategy at the HEC Paris Executive MBA Reunion (June 2026).</p>
+    <p class="mentorline reveal" data-glean-id="leadership-speaking"><b>Recently:</b> panelist on AI and Product Strategy at the HEC Paris Executive MBA Reunion (June 2026), and at MWC Barcelona 2026 with CSG (Hall 5, Stand 5A51).</p>
   </div>
 </section>
 
@@ -612,8 +638,9 @@ footer { border-top-color: var(--artifact-border-light); }
       <div class="skills" id="skills" data-glean-id="toolkit-skills"></div>
     </div>
     <div class="creds reveal" data-glean-id="credentials">
-      <div><p class="label-sm">Education</p><p>Postgraduate degree, Leadership &amp; Talent Management<br><span class="muted">BEBS Barcelona Executive Business School, 2023</span><br><br>Bachelor of Engineering, Computer &amp; Communication Engineering<br><span class="muted">Notre Dame University &ndash; Louaize, Lebanon, 2007</span></p></div>
-      <div><p class="label-sm">Professional development</p><p>University of Michigan: Leading People &amp; Teams (2022) &middot; IDEO U: Design Thinking (2022) &middot; UC Irvine Paul Merage: Hiring Practices (2021) &middot; Digital Marketing Institute: CDMP (2017) &middot; Microsoft Dynamics 365 certified (2017)</p></div>
+      <div><p class="label-sm">Education</p><p>Postgraduate degree, Leadership &amp; Talent Management<br><span class="muted">BEBS Barcelona Executive Business School, 2023 (9.43/10)</span><br><br>Bachelor of Engineering, Computer &amp; Communication Engineering<br><span class="muted">Notre Dame University &ndash; Louaize, Lebanon, 2002&ndash;2007</span><br><br>Lebanese and French Baccalaureate, General Sciences<br><span class="muted">Saints Coeurs Sioufi, Ashrafieh, 2002</span></p></div>
+      <div><p class="label-sm">Professional development</p><p>University of Michigan: Leading People &amp; Teams (2022) &middot; IDEO U: Design Thinking (2022) &middot; UC Irvine Paul Merage: Hiring Practices (2021) &middot; Digital Marketing Institute: CDMP (2017) &middot; Microsoft Certified Professional and MCSA: Dynamics 365 (2017) &middot; ITIL V3 Foundation &middot; PMP preparation &middot; Thomson Reuters EIKON (2014)</p></div>
+      <div><p class="label-sm">Recognition &amp; membership</p><p>ME RSO Heroes of December 2012, Nokia Siemens Networks BSS leadership<br>Certification of Appreciation, NSN BSS Management (2013)<br>Order of Engineers and Architects, Beirut</p></div>
       <div><p class="label-sm">Languages</p><p>English: full professional<br>French: native or bilingual<br>Arabic: native or bilingual<br>Spanish: elementary</p></div>
     </div>
   </div>
@@ -856,15 +883,33 @@ function makeTabs(tabsEl, panelsEl, items, renderPanel, idPrefix, startIdx){
   }, 'focus', 0);
 })();
 
+/* ---------- WE LEaD photo helper (images live in /assets) ---------- */
+var WL_PHOTOS = [
+  { src: 'assets/symposium-1.jpg', alt: 'WE LEaD Global Symposium, South Africa, June 2025', cap: 'WE LEaD Global Symposium, South Africa, June 2025' },
+  { src: 'assets/symposium-2.jpg', alt: 'Speakers and attendees at the WE LEaD Global Symposium', cap: 'Speakers and attendees' },
+  { src: 'assets/symposium-3.jpg', alt: 'In-person session at the WE LEaD Global Symposium', cap: 'In-person sessions' }
+];
+function wlStrip(n){
+  var w = el('div', 'wl-strip');
+  WL_PHOTOS.slice(0, n).forEach(function(ph){
+    var f = document.createElement('figure'), i = document.createElement('img');
+    i.src = ph.src; i.alt = ph.alt; i.loading = 'lazy';
+    i.addEventListener('error', function(){ f.remove(); if (!w.children.length) w.remove(); });
+    f.appendChild(i); var c = document.createElement('figcaption'); c.textContent = ph.cap; f.appendChild(c); w.appendChild(f);
+  });
+  return w;
+}
+document.querySelectorAll('.wl-strip[data-wl]').forEach(function(h){ h.replaceWith(Object.assign(wlStrip(+h.dataset.wl), {})); });
+
 /* ---------- Leadership cards ---------- */
 (function(){
   var CARDS = [
     { id: 'welead', name: 'WE LEaD', badge: 'Co-Chair, EMEA \u00b7 Current', live: true,
       desc: `Women Engaged in Leadership, Exploration and Development: the WE LEaD community at CSG. Co-Chair of the EMEA chapter since January 2025.`,
       steps: [
-        { t: 'Co-Chair', d: `<b>Invited to serve as Co-Chair</b> of the WE LEaD EMEA chapter at CSG International in January 2025.` },
+        { t: 'Co-Chair', d: `<b>Invited to serve as Co-Chair</b> of the WE LEaD EMEA chapter at the start of 2025, alongside my mentor and colleague <b>Anne-Maree Ferraro</b>.` },
         { t: 'Empower women', d: `<b>Led initiatives</b> to empower women in leadership.` },
-        { t: 'South Africa', d: `<b>Co-organized the Global Symposium</b> in South Africa (June 2025), shaping a program that fostered diversity, inclusion, and cross-cultural collaboration among industry leaders and customers.` },
+        { t: 'South Africa', d: `<b>Co-organized the Global Symposium</b> in South Africa (11&ndash;12 June 2025) as a member of the planning committee, shaping an in-person program of personal storytelling, wellness activities, speed networking and a community care session, for customer speakers, CSG women leaders and external thought leaders.` },
         { t: 'The numbers', d: `<b>15 speakers</b>, <b>80 attendees in person</b> and <b>150 virtual</b>.` } ] },
     { id: 'mentoring', name: 'Mentoring & talent', badge: 'Ongoing', live: true,
       desc: `I actively mentor new colleagues within the Service Design team, and keep building the skills behind it.`,
@@ -879,6 +924,7 @@ function makeTabs(tabsEl, panelsEl, items, renderPanel, idPrefix, startIdx){
     var card = el('div', 'tool'); card.dataset.gleanId = 'lead-' + T.id;
     var top = el('div', 'tool-top'); top.appendChild(el('h3', '', T.name)); top.appendChild(el('span', 'badge' + (T.live ? ' live' : ''), T.badge)); card.appendChild(top);
     card.appendChild(el('p', 'desc', T.desc));
+    if (T.id === 'welead') card.appendChild(wlStrip(3));
     var st = el('div', 'stepper'), prog = el('div', 'prog'); st.appendChild(prog);
     var btns = [], detail = el('div', 'step-detail'); detail.setAttribute('aria-live', 'polite');
     var cur = 0, timer = null, userTook = false;
@@ -919,7 +965,8 @@ function makeTabs(tabsEl, panelsEl, items, renderPanel, idPrefix, startIdx){
     { id: 'welead', tab: 'WE LEaD: Co-Chair, EMEA', short: 'WE LEaD', lane: 1, from: 2025.0, to: 2026.9, title: 'Co-Chair, WE LEaD EMEA', org: 'CSG International', dates: 'January 2025 \u2013 Present',
       bullets: [
         `Led initiatives to <b>empower women in leadership</b>.`,
-        `Co-organized the <b>Global Symposium in South Africa</b> (June 2025), shaping a program that fostered diversity, inclusion, and cross-cultural collaboration among industry leaders and customers.`,
+        `Co-organized the <b>Global Symposium in South Africa</b> (11&ndash;12 June 2025) as a member of the planning committee: storytelling, wellness, speed networking and community care, fostering diversity, inclusion and cross-cultural collaboration among industry leaders and customers.`,
+        `Co-Chair alongside <b>Anne-Maree Ferraro</b>; EMEA was chosen to host the global event.`,
         `15 speakers, 80 attendees in person and 150 virtual.`],
       chips: ['Community leadership', 'Event program design', 'Diversity & inclusion'] },
     { id: 'csg-sm', tab: 'CSG: Sr Manager & Principal Consultant', short: 'CSG', lane: 0, from: 2020.55, to: 2022.4, title: 'Senior Manager, Service Design & Principal Consultant (EMEA)', org: 'CSG, Dubai', dates: 'July 2020 \u2013 May 2022',
@@ -932,7 +979,7 @@ function makeTabs(tabsEl, panelsEl, items, renderPanel, idPrefix, startIdx){
     { id: 'matrixx', tab: 'MATRIXX: Presales Manager, MEA', short: 'MATRIXX', lane: 0, from: 2018.0, to: 2020.5, title: 'Presales Manager, MEA', org: 'MATRIXX Software, Dubai', dates: 'January 2018 \u2013 June 2020',
       bullets: [
         `Supported the sales team in business development and in <b>RFQ, RFI and RFP</b> creation: lead qualification, MATRIXX offering, value proposition and final deal closure.`,
-        `Drove growth through key projects, including the <b>Zain Iraq greenfield</b> and the <b>Jawwy MVNO migration</b>.`,
+        `Increased sales by <b>10%</b> through new projects, including the <b>Zain Iraq greenfield</b> and the <b>Jawwy MVNO migration</b> (KSA), plus multiple change requests across MEA.`,
         `Presented MATRIXX&rsquo;s real-time digital commerce platform to <b>influence customer decisions</b>.`,
         `Mentored the junior presales team, accelerating their expertise in MATRIXX technology; enhanced presales and marketing collateral.`],
       chips: ['Pre-sales', 'RFx', 'Digital monetization', 'Mentoring'] },
@@ -941,11 +988,12 @@ function makeTabs(tabsEl, panelsEl, items, renderPanel, idPrefix, startIdx){
         `Developed <b>strategic account plans</b> that prioritized key tasks for return on investment and customer retention.`,
         `Contributed to quarterly business reviews, aligning with the sales team.`,
         `Translated <b>business requirements into architectures and designs</b>; answered functional requirements in RFPs, RFQs and RFIs.`,
-        `Managed the delivery of complex OSS/BSS/VAS integration projects in agile environments; onsite leader for multi-play (prepaid, postpaid, fixed) migrations.`],
-      chips: ['Account plans', 'Solution architecture', 'RFPs', 'OSS/BSS'] },
-    { id: 'rk-sis', tab: 'Redknee: Sr System Integration Specialist', short: 'Redknee', lane: 0, from: 2013.85, to: 2015.05, title: 'Senior System Integration Specialist', org: 'Redknee Inc., Beirut', dates: 'November 2013 \u2013 January 2015',
+        `Managed the delivery of complex OSS/BSS/VAS integration projects in agile environments; onsite leader for multi-play (prepaid, postpaid, fixed) migrations.`,
+        `Projects included the <b>Omantel</b> prepaid, postpaid and fixed migration (3M subscribers, dimensioned for 5M), <b>Reliance Communications</b> API mapping (TIBCO, payment and notification APIs), and presales support on multiple <b>Touch Lebanon</b> RFPs (convergent charging, billing, CRM, mediation, policy control).`],
+      chips: ['Account plans', 'Solution architecture', 'RFPs', 'OSS/BSS', 'Omantel', 'Reliance Communications'] },
+    { id: 'rk-sis', tab: 'Redknee: Sr System Integration Specialist', short: 'Redknee', lane: 0, from: 2013.85, to: 2015.05, title: 'Senior System Integration Specialist', org: 'Redknee Inc., Beirut', dates: 'November 2013 \u2013 February 2015',
       bullets: [
-        `Acted as <b>Tariff Consultant</b>, advising customer teams from engineering to senior leadership.`,
+        `Acted as <b>Tariff Consultant</b>, advising customer teams from engineering to senior leadership, and lifted customer satisfaction and revenue by <b>40%</b>.`,
         `Handled technical queries and emergencies and supervised project roll-outs using Salesforce, JIRA, and Confluence; managed incidents against SLA agreements.`,
         `Prepared concept papers for promotions using CRM campaign management and real-time campaign software.`],
       chips: ['Tariff consulting', 'Incident management', 'SLAs'] },
@@ -967,6 +1015,7 @@ function makeTabs(tabsEl, panelsEl, items, renderPanel, idPrefix, startIdx){
     var box = el('div', 'role-box');
     box.appendChild(el('p', 'meta', r.org + ' \u00b7 ' + r.dates));
     box.appendChild(el('h3', '', r.title));
+    if (r.id === 'welead') box.appendChild(wlStrip(3));
     var ul = el('ul'); r.bullets.forEach(function(b){ ul.appendChild(el('li', '', b)); }); box.appendChild(ul);
     var cs = el('div', 'chips'); r.chips.forEach(function(c){ cs.appendChild(el('span', 'chip', c)); }); box.appendChild(cs);
     p.appendChild(box);
